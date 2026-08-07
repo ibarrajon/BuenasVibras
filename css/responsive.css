@@ -1,0 +1,56 @@
+/*==================================
+DESKTOP
+==================================*/
+
+@media(min-width:992px){
+    /* Header */
+    .menu-btn{
+        display:none;
+    }
+
+    .nav{
+        position:static;
+        width:auto;
+        height:auto;
+        padding:0;
+        background:none;
+        box-shadow:none;
+
+    }
+
+    .nav ul{
+        flex-direction:row;
+        align-items:center;
+        gap:45px;
+    }
+
+    /* Hero */
+
+    .hero{
+        padding-top:170px;
+        min-height:100vh;
+        display:flex;
+        align-items:center;
+    }
+
+    .hero-container{
+        grid-template-columns:1fr 1fr;
+        gap:80px;
+    }
+
+    .hero h1{
+        font-size:4.5rem;
+    }
+
+    .hero-benefits{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .hero-image{
+        justify-content:flex-end;
+    }
+
+    .hero-image img{
+        max-width:620px;
+    }
+}

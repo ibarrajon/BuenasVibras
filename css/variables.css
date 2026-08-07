@@ -1,0 +1,55 @@
+/*======================================
+PALETA PRINCIPAL
+======================================*/
+
+:root{
+    /* Fondo */
+    --background:#F3EEE8;
+    --surface:#FFFFFF;
+    --surface-alt:#ECE5DD;
+    --surface-hover:#F8F4F1;
+
+    /* Marca */
+    --primary:#B07D5F;
+    --primary-dark:#946549;
+
+    /* Texto */
+    --text:#342D29;
+    --text-light:#6E6660;
+
+    /* Bordes */
+    --border:#DDD4CC;
+
+    /* Extras */
+    --shadow:0 12px 30px rgba(0,0,0,.08);
+    --radius:20px;
+    --transition:.30s;
+    --container:1240px;
+    --section:110px;
+}
+
+/*======================================
+TIPOGRAFÍA
+======================================*/
+
+:root{
+    --title:'Cormorant Garamond',serif;
+    --body:'Manrope',sans-serif;
+}
+
+/*======================================
+ESPACIADOS
+======================================*/
+
+:root{
+    --section:110px;
+    --gap:28px;
+}
+
+/*======================================
+BOTONES
+======================================*/
+
+:root{
+    --btn-height:56px;
+}
