@@ -1,0 +1,425 @@
+[
+    {
+        "id": 1,
+        "nombre": "Sextual Neutro",
+        "categoria": "Lubricantes y aceites",
+        "precio": 7000.0,
+        "imagen": "1.webp",
+        "destacado": false,
+        "descripcion": "🤍 Neutro y delicado.\n💧 Textura liviana\n🚫 No apto comestible"
+    },
+    {
+        "id": 2,
+        "nombre": "Sextual Chicle",
+        "categoria": "Lubricantes y aceites",
+        "precio": 7000.0,
+        "imagen": "2.webp",
+        "destacado": true,
+        "descripcion": "🤍 Aroma Chicle\n💧 Textura liviana\n🚫 No apto comestible"
+    },
+    {
+        "id": 3,
+        "nombre": "Sextual Frutilla",
+        "categoria": "Lubricantes y aceites",
+        "precio": 7000.0,
+        "imagen": "3.webp",
+        "destacado": false,
+        "descripcion": "🤍 Aroma Frutilla\n💧 Textura liviana\n🚫 No apto comestible"
+    },
+    {
+        "id": 4,
+        "nombre": "Sextual Rosas",
+        "categoria": "Lubricantes y aceites",
+        "precio": 7000.0,
+        "imagen": "4.webp",
+        "destacado": false,
+        "descripcion": "🤍 Aroma Rosas\n💧 Textura liviana\n🚫 No apto comestible"
+    },
+    {
+        "id": 5,
+        "nombre": "Sextual Jade",
+        "categoria": "Lubricantes y aceites",
+        "precio": 8500.0,
+        "imagen": "5.webp",
+        "destacado": false,
+        "descripcion": "🧡 Jade!! Vitamina C y colágeno\n💧 Textura liviana\n🚫 No apto comestible"
+    },
+    {
+        "id": 6,
+        "nombre": "Sextual Ruby",
+        "categoria": "Lubricantes y aceites",
+        "precio": 8500.0,
+        "imagen": "6.webp",
+        "destacado": false,
+        "descripcion": "🧡 Ruby!! Ácido hialuronico y argan\n💧 Textura liviana\n🚫 No apto comestible"
+    },
+    {
+        "id": 7,
+        "nombre": "Sextual Gold",
+        "categoria": "Lubricantes y aceites",
+        "precio": 8500.0,
+        "imagen": "7.webp",
+        "destacado": false,
+        "descripcion": "🧡 Gold!! L-arginina, maca y jengibre\n💧 Textura liviana\n🚫 No apto comestible"
+    },
+    {
+        "id": 8,
+        "nombre": "Sextual Fire",
+        "categoria": "Lubricantes y aceites",
+        "precio": 8000.0,
+        "imagen": "8.webp",
+        "destacado": false,
+        "descripcion": "🔥 Fire!! Sensación hot\n💧 Textura liviana\n🚫 No apto comestible"
+    },
+    {
+        "id": 9,
+        "nombre": "Sextual Ice",
+        "categoria": "Lubricantes y aceites",
+        "precio": 8000.0,
+        "imagen": "9.webp",
+        "destacado": false,
+        "descripcion": "🧊 Ice!! Sensación cold\n💧 Textura liviana\n🚫 No apto comestible"
+    },
+    {
+        "id": 10,
+        "nombre": "Sextual Arnica",
+        "categoria": "Lubricantes y aceites",
+        "precio": 8500.0,
+        "imagen": "10.webp",
+        "destacado": false,
+        "descripcion": "🌿 Árnica y manzanilla\n💜 Especialmente para la zona anal"
+    },
+    {
+        "id": 11,
+        "nombre": "Sextual Body Oil Uva",
+        "categoria": "Lubricantes y aceites",
+        "precio": 8000.0,
+        "imagen": "11.webp",
+        "destacado": false,
+        "descripcion": "🍇 Sabor a uva\n🤍 Textura sedosa\n🫦 Apto para sexo oral"
+    },
+    {
+        "id": 12,
+        "nombre": "Sextual Body Oil Piña Colada",
+        "categoria": "Lubricantes y aceites",
+        "precio": 8000.0,
+        "imagen": "12.webp",
+        "destacado": false,
+        "descripcion": "🍍 Sabor a piña colada\n🤍 Textura sedosa\n🫦 Apto para sexo oral"
+    },
+    {
+        "id": 13,
+        "nombre": "Sextual Body Oil Cereza",
+        "categoria": "Lubricantes y aceites",
+        "precio": 8000.0,
+        "imagen": "13.webp",
+        "destacado": false,
+        "descripcion": "🍒 Sabor a cereza\n🤍 Textura sedosa\n🫦 Apto para sexo oral"
+    },
+    {
+        "id": 14,
+        "nombre": "Aceite Labial Hot",
+        "categoria": "Lubricantes y aceites",
+        "precio": 15000.0,
+        "imagen": "14.webp",
+        "destacado": false,
+        "descripcion": "A veces un beso cambia una noche..\nA veces una sorpresa"
+    },
+    {
+        "id": 15,
+        "nombre": "Mielcita Vigorizante",
+        "categoria": "Lubricantes y aceites",
+        "precio": 5500.0,
+        "imagen": "15.webp",
+        "destacado": false,
+        "descripcion": "En ocaciones, un toque de dulzura cambia toda la historia"
+    },
+    {
+        "id": 16,
+        "nombre": "Dados Naranja",
+        "categoria": "Juegos eróticos",
+        "precio": 9000.0,
+        "imagen": "16.webp",
+        "destacado": false,
+        "descripcion": "Juego de dados\nEl azar decide que pose y que acción"
+    },
+    {
+        "id": 17,
+        "nombre": "Mini Poker",
+        "categoria": "Juegos eróticos",
+        "precio": 9000.0,
+        "imagen": "17.webp",
+        "destacado": false,
+        "descripcion": "Juego de cartas\nAnímate a probar diferentes poses"
+    },
+    {
+        "id": 18,
+        "nombre": "Ruleta",
+        "categoria": "Juegos eróticos",
+        "precio": 13000.0,
+        "imagen": "18.webp",
+        "destacado": true,
+        "descripcion": "Juego de ruleta\nDale un giro a tu vida sexual"
+    },
+    {
+        "id": 19,
+        "nombre": "Cartas Desafio",
+        "categoria": "Juegos eróticos",
+        "precio": 13000.0,
+        "imagen": "19.webp",
+        "destacado": false,
+        "descripcion": "Juego desafio 30 días\nDescubre día a día un nuevo reto"
+    },
+    {
+        "id": 20,
+        "nombre": "Balita 10 Velocidades",
+        "categoria": "Accesorios de bienestar íntimo",
+        "precio": 13000.0,
+        "imagen": "20.webp",
+        "destacado": false,
+        "descripcion": "Balita!! Compacta, suave al tacto y con 10 modos de vibración. Funciona a pilas\nA veces, las mejores sorpresas vienen en formato más pequeño"
+    },
+    {
+        "id": 21,
+        "nombre": "Balita Labial",
+        "categoria": "Accesorios de bienestar íntimo",
+        "precio": 9000.0,
+        "imagen": "21.webp",
+        "destacado": false,
+        "descripcion": "Balita!! Compacta, simula ser un labial y con 10 modos de vibración. Funciona a pilas\nLo bueno no siempre necesita ocupar mucho espacio."
+    },
+    {
+        "id": 22,
+        "nombre": "Balita Rabit Usb",
+        "categoria": "Accesorios de bienestar íntimo",
+        "precio": 29000.0,
+        "imagen": "22.webp",
+        "destacado": true,
+        "descripcion": "Balita Rabbit!! suave al tacto y con 10\nmodos de vibración. Carga USB.\nHay pequeños detalles capaces de hacer grandes diferencias"
+    },
+    {
+        "id": 23,
+        "nombre": "Succionador Usb Eco",
+        "categoria": "Accesorios de bienestar íntimo",
+        "precio": 30000.0,
+        "imagen": "23.webp",
+        "destacado": false,
+        "descripcion": "Succionador!! suave al tacto, dispositivo de estimulación por ondas. Carga USB.\nHay sensaciones que se descubren cuando te animas a conocerlas"
+    },
+    {
+        "id": 24,
+        "nombre": "Anillo Usb Rojo",
+        "categoria": "Accesorios de bienestar íntimo",
+        "precio": 29000.0,
+        "imagen": "24.webp",
+        "destacado": false,
+        "descripcion": "Anillo vibrador!! suave al tacto y con 10 modos de vibración. Carga USB\nLas mejores historias siempre se escriben de a dos."
+    },
+    {
+        "id": 25,
+        "nombre": "Vibrador Usb",
+        "categoria": "Accesorios de bienestar íntimo",
+        "precio": 59000.0,
+        "imagen": "25.webp",
+        "destacado": false,
+        "descripcion": "Vibrador íntimo!! suave al tacto y con 10 modos de vibración. Carga USB\nHay momentos que invitan a bajar el ritmo y conectarte con vos"
+    },
+    {
+        "id": 26,
+        "nombre": "Plug Acero S",
+        "categoria": "Accesorios de bienestar íntimo",
+        "precio": 13000.0,
+        "imagen": "26.webp",
+        "destacado": false,
+        "descripcion": "Plug!! Acero \"S\". Diseñado para brindar comodidad.\nCada descubrimiento comienza con pequeños pasos"
+    },
+    {
+        "id": 27,
+        "nombre": "Plug Silicona M",
+        "categoria": "Accesorios de bienestar íntimo",
+        "precio": 15000.0,
+        "imagen": "27.webp",
+        "destacado": false,
+        "descripcion": "Plug!! Silicona \"M\". Diseñado para brindar comodidad.\nCada descubrimiento comienza con pequeños pasos"
+    },
+    {
+        "id": 28,
+        "nombre": "Rosario Punta Del Este",
+        "categoria": "Accesorios de bienestar íntimo",
+        "precio": 15000.0,
+        "imagen": "28.webp",
+        "destacado": false,
+        "descripcion": "Rosario!! Silicona flexible, de tacto suave\nHay momentos para descubrir... Y momentos para disfrutar sin apuro"
+    },
+    {
+        "id": 29,
+        "nombre": "Macizo Ciber",
+        "categoria": "Accesorios de placer personal",
+        "precio": 15000.0,
+        "imagen": "29.webp",
+        "destacado": false,
+        "descripcion": "Masturbador texturizado!! Flexible, de suave textura. 16 cm.\nNo hay una única forma de disfrutar. Hay una que es la tuya."
+    },
+    {
+        "id": 30,
+        "nombre": "Macizo Ventosa",
+        "categoria": "Accesorios de placer personal",
+        "precio": 16000.0,
+        "imagen": "30.webp",
+        "destacado": false,
+        "descripcion": "Mastubador texturizado!! Flexible, de suave textura. 18 cm. Con ventosa.\nCada experiencia es una invitación a conocerte un poco más."
+    },
+    {
+        "id": 31,
+        "nombre": "Vagina",
+        "categoria": "Accesorios de placer personal",
+        "precio": 19500.0,
+        "imagen": "31.webp",
+        "destacado": false,
+        "descripcion": "Mastubador!! Flexible, suave y delicado, con textura interna confortante.\nRegalarte tiempo también es una forma de amor"
+    },
+    {
+        "id": 32,
+        "nombre": "Arnés Cuero Moño",
+        "categoria": "Fetiche",
+        "precio": 20000.0,
+        "imagen": "32.webp",
+        "destacado": false,
+        "descripcion": "Arnés con moños!! Elegante, con correas regulables\nLa elegancia también puede tener un lado atrevido."
+    },
+    {
+        "id": 33,
+        "nombre": "Arnés",
+        "categoria": "Fetiche",
+        "precio": 11000.0,
+        "imagen": "33.webp",
+        "destacado": false,
+        "descripcion": "Arnés cinturón!! Base símil cuero, elástico adaptable al cuerpo.\nHay accesorios que completan un conjunto y otros que completan una actitud"
+    },
+    {
+        "id": 34,
+        "nombre": "Esposas Peluche",
+        "categoria": "Fetiche",
+        "precio": 10000.0,
+        "imagen": "34.webp",
+        "destacado": false,
+        "descripcion": "Esposas con peluche!! Símil cuero, con peluche suave para mejor bienestar.\nCada historia tiene un lado más atrevido."
+    },
+    {
+        "id": 35,
+        "nombre": "Plumita",
+        "categoria": "Fetiche",
+        "precio": 10000.0,
+        "imagen": "35.webp",
+        "destacado": false,
+        "descripcion": "Plumita!! De estimulación sensorial. Liviana, elegante y agradable al tacto.\nLas mejores sensaciones empiezan con solo un roce."
+    },
+    {
+        "id": 36,
+        "nombre": "Conjunto Barcelona",
+        "categoria": "Lencería sensual",
+        "precio": 19000.0,
+        "imagen": "36.webp",
+        "destacado": true,
+        "descripcion": "Lencería de encaje. Diseño delicado. Talle unico\nSentirte bien con vos, es el detalle más importante."
+    },
+    {
+        "id": 37,
+        "nombre": "Conjunto París",
+        "categoria": "Lencería sensual",
+        "precio": 14000.0,
+        "imagen": "37.webp",
+        "destacado": false,
+        "descripcion": "Lencería de encaje. Diseño delicado. Talle unico\nLa elegancia comienza cuando te sentís cómoda con\nquien sos."
+    },
+    {
+        "id": 38,
+        "nombre": "Conjunto Berlín",
+        "categoria": "Lencería sensual",
+        "precio": 14000.0,
+        "imagen": "38.webp",
+        "destacado": false,
+        "descripcion": "Lencería de encaje. Diseño delicado. Talle unico\nPorque la verdadera belleza empieza por como te\nsentís."
+    },
+    {
+        "id": 39,
+        "nombre": "Conjunto Madrid",
+        "categoria": "Lencería sensual",
+        "precio": 14000.0,
+        "imagen": "39.webp",
+        "destacado": false,
+        "descripcion": "Lencería de encaje. Diseño delicado. Talle unico\nVestirte para vos, también es una forma de amor\npropio."
+    },
+    {
+        "id": 40,
+        "nombre": "Conjunto Roma",
+        "categoria": "Lencería sensual",
+        "precio": 14000.0,
+        "imagen": "40.webp",
+        "destacado": false,
+        "descripcion": "Lencería de encaje. Diseño delicado. Talle unico\nHay prendas que abrazan el cuerpo. Y otras que\nabrazan el autoestima."
+    },
+    {
+        "id": 41,
+        "nombre": "Conjunto Venecia",
+        "categoria": "Lencería sensual",
+        "precio": 14000.0,
+        "imagen": "41.webp",
+        "destacado": false,
+        "descripcion": "Lencería de encaje. Diseño delicado. Talle unico\nLa sensualidad más linda es la que nace de sentirte\nbien con vos misma."
+    },
+    {
+        "id": 42,
+        "nombre": "Conjunto Lisboa",
+        "categoria": "Lencería sensual",
+        "precio": 14000.0,
+        "imagen": "42.webp",
+        "destacado": false,
+        "descripcion": "Lencería de encaje. Diseño delicado. Talle unico\nNo se trata de impresionar, se trata de sentirse\nincreíble."
+    },
+    {
+        "id": 43,
+        "nombre": "Portaligas",
+        "categoria": "Lencería sensual",
+        "precio": 10000.0,
+        "imagen": "43.webp",
+        "destacado": false,
+        "descripcion": "Lencería de encaje. Diseño delicado. Talle unico\nUn pequeño detalle puede cambiar por completo un\nconjunto."
+    },
+    {
+        "id": 44,
+        "nombre": "Ligas",
+        "categoria": "Lencería sensual",
+        "precio": 10000.0,
+        "imagen": "44.webp",
+        "destacado": false,
+        "descripcion": "Lencería de encaje. Diseño delicado. Talle unico"
+    },
+    {
+        "id": 45,
+        "nombre": "Tanga Rutera",
+        "categoria": "Lencería sensual",
+        "precio": 5500.0,
+        "imagen": "45.webp",
+        "destacado": false,
+        "descripcion": "Lencería de encaje. Diseño delicado. Talle unico"
+    },
+    {
+        "id": 46,
+        "nombre": "Tanga Moño",
+        "categoria": "Lencería sensual",
+        "precio": 5500.0,
+        "imagen": "46.webp",
+        "destacado": false,
+        "descripcion": "Lencería de encaje. Diseño delicado. Talle unico"
+    },
+    {
+        "id": 47,
+        "nombre": "Tanga 3 Corazones",
+        "categoria": "Lencería sensual",
+        "precio": 5500.0,
+        "imagen": "47.webp",
+        "destacado": false,
+        "descripcion": "Lencería de encaje. Diseño delicado. Talle unico"
+    }
+]

@@ -1,0 +1,328 @@
+/*==================================
+CARRITO
+==================================*/
+
+.carrito{
+    padding:180px 0 70px;
+}
+
+.carrito-titulo{
+    margin-bottom:35px;
+}
+
+.carrito-titulo h1{
+    margin:0;
+    font-family:"Cormorant Garamond",serif;
+    font-size:clamp(2.4rem,5vw,3.4rem);
+    font-weight:600;
+    line-height:1.1;
+}
+
+/*==================================
+CONTENEDOR
+==================================*/
+
+.carrito-layout{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) 320px;
+    gap:45px;
+    align-items:start;
+}
+
+/*==================================
+PRODUCTOS
+==================================*/
+
+.carrito-productos{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.carrito-item{
+    display:grid;
+    grid-template-columns:100px minmax(0,1fr) auto;
+    gap:20px;
+    align-items:center;
+    padding:18px;
+    border:1px solid var(--border);
+    border-radius:16px;
+    background:var(--surface);
+}
+
+.carrito-item-imagen{
+    width:100px;
+    height:100px;
+    overflow:hidden;
+    border-radius:12px;
+    background:var(--background);
+}
+
+.carrito-item-imagen img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.carrito-item-info h2{
+    margin:0 0 6px;
+    font-family:"Cormorant Garamond",serif;
+    font-size:1.35rem;
+    font-weight:600;
+}
+
+.carrito-item-precio{
+    color:var(--text-light);
+    font-size:.9rem;
+}
+
+/*==================================
+CANTIDAD
+==================================*/
+
+.carrito-item-controles{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin-top:14px;
+}
+
+.carrito-cantidad{
+    display:flex;
+    align-items:center;
+    border:1px solid var(--border);
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.carrito-cantidad button{
+    width:32px;
+    height:32px;
+    border:0;
+    background:transparent;
+    color:var(--text);
+    cursor:pointer;
+    font-size:1rem;
+}
+
+.carrito-cantidad button:hover{
+    background:var(--background);
+}
+
+.carrito-cantidad span{
+    min-width:30px;
+    text-align:center;
+    font-size:.9rem;
+}
+
+.carrito-eliminar{
+    border:0;
+    background:transparent;
+    color:var(--text-light);
+    cursor:pointer;
+    font-size:.8rem;
+    padding:5px;
+}
+
+.carrito-eliminar:hover{
+    color:var(--primary);
+}
+
+/*==================================
+SUBTOTAL DEL PRODUCTO
+==================================*/
+
+.carrito-item-subtotal{
+    text-align:right;
+    font-weight:600;
+    white-space:nowrap;
+}
+
+/*==================================
+RESUMEN
+==================================*/
+
+.carrito-resumen{
+    padding:25px;
+    border:1px solid var(--border);
+    border-radius:18px;
+    background:var(--surface);
+}
+
+.carrito-resumen h2{
+    margin:0 0 25px;
+    font-family:"Cormorant Garamond",serif;
+    font-size:1.7rem;
+}
+
+.carrito-resumen-linea{
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+    margin-bottom:12px;
+    color:var(--text-light);
+    font-size:.9rem;
+}
+
+.carrito-resumen-total{
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+    margin-top:20px;
+    padding-top:20px;
+    border-top:1px solid var(--border);
+    font-weight:600;
+}
+
+.carrito-resumen-total strong{
+    font-size:1.15rem;
+}
+
+/*==================================
+BOTÓN WHATSAPP
+==================================*/
+
+.carrito-whatsapp{
+    width:100%;
+    min-height:48px;
+    margin-top:25px;
+    border:0;
+    border-radius:25px;
+    background:var(--primary);
+    color:#fff;
+    font-family:inherit;
+    font-size:.9rem;
+    font-weight:600;
+    cursor:pointer;
+    transition:transform .2s ease,opacity .2s ease;
+}
+
+.carrito-whatsapp:hover{
+    transform:translateY(-2px);
+    opacity:.9;
+}
+
+/*==================================
+CARRITO VACÍO
+==================================*/
+
+.carrito-vacio{
+    padding:70px 20px;
+    text-align:center;
+}
+
+.carrito-vacio svg{
+    width:45px;
+    height:45px;
+    margin-bottom:15px;
+}
+
+.carrito-vacio h2{
+    margin:0 0 10px;
+    font-family:"Cormorant Garamond",serif;
+    font-size:2rem;
+}
+
+.carrito-vacio p{
+    margin:0 0 25px;
+    color:var(--text-light);
+}
+
+.carrito-vacio a{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:44px;
+    padding:0 22px;
+    border-radius:22px;
+    background:var(--primary);
+    color:#fff;
+    text-decoration:none;
+    font-size:.9rem;
+    font-weight:600;
+}
+
+/*==================================
+RESPONSIVE
+==================================*/
+
+@media(max-width:700px){
+
+    .carrito{
+        padding:180px 20px 50px;
+    }
+
+    .carrito-titulo{
+        margin-bottom:25px;
+    }
+
+    .carrito-layout{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    .carrito-item{
+        grid-template-columns:80px minmax(0,1fr);
+        gap:15px;
+        padding:14px;
+    }
+
+    .carrito-item-imagen{
+        width:80px;
+        height:80px;
+    }
+
+    .carrito-item-subtotal{
+        grid-column:2;
+        text-align:left;
+        margin-top:-5px;
+    }
+
+    .carrito-item-info h2{
+        font-size:1.2rem;
+    }
+
+    .carrito-resumen{
+        padding:20px;
+    }
+
+}
+
+/*==================================
+VACIAR CARRITO
+==================================*/
+
+.carrito-vaciar{
+    width:100%;
+    min-height:42px;
+
+    margin-top:12px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border:1px solid var(--border);
+    border-radius:22px;
+
+    background:transparent;
+    color:var(--text-light);
+
+    font-family:inherit;
+    font-size:.82rem;
+    font-weight:500;
+
+    cursor:pointer;
+
+    transition:
+        background .2s ease,
+        color .2s ease,
+        border-color .2s ease;
+}
+
+.carrito-vaciar:hover{
+    background:var(--surface-hover);
+    color:var(--primary);
+    border-color:var(--primary);
+}

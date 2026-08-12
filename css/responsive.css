@@ -3,34 +3,29 @@ DESKTOP
 ==================================*/
 
 @media(min-width:992px){
-    /* Header */
+
+    /* Menú escritorio */
+
+    .nav-desktop{
+        display:block;
+    }
+
+    /* Ocultar menú móvil */
+
     .menu-btn{
         display:none;
     }
 
-    .nav{
-        position:static;
-        width:auto;
-        height:auto;
-        padding:0;
-        background:none;
-        box-shadow:none;
-
-    }
-
-    .nav ul{
-        flex-direction:row;
-        align-items:center;
-        gap:45px;
+    .nav-mobile,
+    .overlay{
+        display:none;
     }
 
     /* Hero */
 
     .hero{
-        padding-top:170px;
-        min-height:100vh;
-        display:flex;
-        align-items:center;
+        padding-top:135px;
+        padding-bottom:55px;
     }
 
     .hero-container{
@@ -50,7 +45,45 @@ DESKTOP
         justify-content:flex-end;
     }
 
-    .hero-image img{
-        max-width:620px;
+}
+ 
+
+/*==================================
+CATEGORÍAS RESPONSIVE
+==================================*/
+
+@media(min-width:992px){
+
+    .categorias-grid{
+
+        grid-template-columns:repeat(4,1fr);
+
     }
+
+    .categoria-card{
+
+        height:380px;
+
+    }
+
+}
+
+/*==================================
+PRODUCTOS RESPONSIVE
+==================================*/
+
+@media(min-width:992px){
+
+    .productos-grid{
+        grid-template-columns:repeat(4,1fr);
+    }
+
+}
+
+@media(max-width:992px){
+
+  .hero-container{
+    padding-top:10px;
+}
+
 }

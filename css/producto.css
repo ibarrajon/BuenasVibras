@@ -1,0 +1,225 @@
+/*==================================
+FICHA DE PRODUCTO
+==================================*/
+
+.producto-detalle{
+    padding:175px 0 70px;
+}
+
+.producto-volver{
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+    margin-bottom:28px;
+    color:var(--text-light);
+    text-decoration:none;
+    font-size:.9rem;
+    transition:color .2s ease;
+}
+
+.producto-volver:hover{
+    color:var(--primary);
+}
+
+.producto-volver svg{
+    width:17px;
+    height:17px;
+}
+
+/*==================================
+CONTENEDOR
+==================================*/
+
+.producto-ficha{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+    gap:55px;
+    align-items:start;
+}
+
+/*==================================
+IMAGEN
+==================================*/
+
+.producto-ficha-imagen{
+    width:100%;
+    overflow:hidden;
+    border-radius:18px;
+    background:var(--surface);
+}
+
+.producto-ficha-imagen img{
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+/*==================================
+INFORMACIÓN
+==================================*/
+
+.producto-ficha-info{
+    padding:15px 5px;
+}
+
+.producto-ficha-categoria{
+    display:inline-block;
+    margin-bottom:12px;
+    color:var(--primary);
+    font-size:.82rem;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+}
+
+.producto-ficha-info h1{
+    margin:0 0 18px;
+    font-family:"Cormorant Garamond",serif;
+    font-size:clamp(2rem,4vw,3.2rem);
+    line-height:1.05;
+    font-weight:600;
+}
+
+.producto-ficha-precio{
+    margin-bottom:28px;
+    font-size:1.45rem;
+    font-weight:600;
+}
+
+/*==================================
+DESCRIPCIÓN
+==================================*/
+
+.producto-ficha-descripcion{
+    margin-bottom:30px;
+    color:var(--text-light);
+    font-size:.95rem;
+    line-height:1.75;
+}
+
+.producto-ficha-descripcion p{
+    margin:0 0 12px;
+}
+
+.producto-ficha-descripcion p:last-child{
+    margin-bottom:0;
+}
+
+/*==================================
+BOTÓN
+==================================*/
+
+.producto-agregar{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:9px;
+
+    min-height:48px;
+    padding:0 24px;
+
+    border:0;
+    border-radius:25px;
+
+    background:var(--primary);
+    color:#fff;
+
+    font-family:inherit;
+    font-size:.9rem;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:
+        transform .2s ease,
+        opacity .2s ease;
+}
+
+.producto-agregar:hover{
+    transform:translateY(-2px);
+    opacity:.9;
+}
+
+.producto-agregar svg{
+    width:18px;
+    height:18px;
+}
+
+/*==================================
+CARGANDO
+==================================*/
+
+.producto-cargando{
+    grid-column:1/-1;
+    padding:60px 0;
+    text-align:center;
+    color:var(--text-light);
+}
+
+/*==================================
+ERROR
+==================================*/
+
+.producto-error{
+    grid-column:1/-1;
+    padding:70px 20px;
+    text-align:center;
+}
+
+.producto-error svg{
+    width:40px;
+    height:40px;
+    margin-bottom:15px;
+}
+
+.producto-error h2{
+    margin:0 0 20px;
+    font-family:"Cormorant Garamond",serif;
+}
+
+.producto-error a{
+    color:var(--primary);
+    text-decoration:none;
+}
+
+/*==================================
+RESPONSIVE
+==================================*/
+
+@media(max-width:700px){
+
+    .producto-detalle{
+        padding:175px 20px 50px;
+    }
+
+    .producto-volver{
+        margin-bottom:20px;
+    }
+
+    .producto-ficha{
+        grid-template-columns:1fr;
+        gap:28px;
+    }
+
+    .producto-ficha-info{
+        padding:0;
+    }
+
+    .producto-ficha-info h1{
+        font-size:2.25rem;
+    }
+
+    .producto-ficha-precio{
+        font-size:1.3rem;
+        margin-bottom:22px;
+    }
+
+    .producto-ficha-descripcion{
+        font-size:.92rem;
+        line-height:1.7;
+    }
+
+    .producto-agregar{
+        width:100%;
+    }
+
+}

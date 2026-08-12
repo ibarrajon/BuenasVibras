@@ -21,111 +21,66 @@
 
     <!-- Estilos -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="container header-container">
-            <!-- Logo -->
-            <a href="index.html" class="logo">
-                <img src="img/logo.png" alt="Buenas Vibras">
-            </a>
-
-            <!-- Menú -->
-            <nav class="nav" id="nav">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-
-                    <li class="dropdown">
-                        <a href="#">Productos</a>
-                        <!-- Sprint 2 -->
-                    </li>
-
-                    <li><a href="#">Nosotros</a></li>
-                </ul>
-            </nav>
-
-            <!-- Acciones -->
-            <div class="header-actions">
-                <!-- Carrito -->
-                <button class="cart-btn">
-                    <i data-lucide="shopping-bag"></i>
-                    <span>0</span>
-                </button>
-
-                <!-- Menú móvil -->
-                <button id="menu-btn" class="menu-btn">
-                    <i id="menu-icon" data-lucide="menu"></i>
-                </button>
-            </div>
-        </div>
-    </header>
+    <!-- Header y menú generados por app.js -->
+    <div id="site-header"></div>
 
     <section class="hero">
         <div class="container hero-container">
-            <!-- Columna izquierda -->
-            <div class="hero-content">
-                <span class="hero-tag">
-                    Boutique Erótica
-                </span>
-                <h1>Descubrí nuevas experiencias.</h1>
-
-                <p>
-                    Productos seleccionados para vivir el bienestar,
-                    el placer y la intimidad con libertad,
-                    confianza y absoluta discreción.
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="#"
-                    class="btn btn-primary">
-                        Ver catálogo
-                    </a>
-
-                    <a href="#" class="btn btn-outline">
-                        Conocenos
-                    </a>
-                </div>
-
-                <!-- Beneficios -->
-                <div class="hero-benefits">
-                    <div>
-                        <i data-lucide="package-check"></i>
-                        <span>Envíos discretos</span>
-                    </div>
-
-                    <div>
-                        <i data-lucide="badge-check"></i>
-                        <span>Productos seleccionados</span>
-                    </div>
-
-                    <div>
-                        <i data-lucide="shield-check"></i>
-                        <span>Absoluta discreción</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Imagen -->
             <div class="hero-image">
                 <img src="img/hero/hero-home.webp" alt="Buenas Vibras">
             </div>
         </div>
     </section>
 
-    <!--=====================================================
-    SECCIONES (Sprint 2)
-    ======================================================-->
+    <!--CATEGORÍAS -->
+    <section class="categorias" id="categorias">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-tag">
+                    Explorá
+                </span>
 
-    <section class="categorias"></section>
+                <h2>
+                    Encontrá lo que buscás
+                </h2>
 
-    <section class="destacados"></section>
+                <p>
+                    Descubrí nuestra selección de productos pensados para disfrutar a tu manera.
+                </p>
 
-    <section class="nosotros"></section>
+            </div>
 
-    <footer>
+            <!-- Las categorías se generan desde JSON -->
+            <div class="categorias-grid" id="categorias-grid"></div>
+        </div>
+    </section>
 
-    </footer>
+    <!--PRODUCTOS DESTACADOS -->
+    <section class="destacados" id="destacados">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-tag">
+                    Selección especial
+                </span>
+
+                <h2>
+                    Productos destacados
+                </h2>
+
+                <p>
+                    Una selección de nuestros productos favoritos.
+                </p>
+            </div>
+            <div class="productos-grid" id="destacados-grid"></div>
+        </div>
+    </section>
+
+    <!-- Footer generado por app.js -->
+    <div id="site-footer"></div>
 
     <script src="js/app.js"></script>
     <script>
