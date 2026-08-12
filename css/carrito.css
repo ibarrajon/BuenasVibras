@@ -184,23 +184,51 @@ BOTÓN WHATSAPP
 ==================================*/
 
 .carrito-whatsapp{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
     width:100%;
     min-height:48px;
+
     margin-top:25px;
+    padding:0 22px;
+
     border:0;
     border-radius:25px;
+
     background:var(--primary);
     color:#fff;
+
     font-family:inherit;
     font-size:.9rem;
     font-weight:600;
+
     cursor:pointer;
-    transition:transform .2s ease,opacity .2s ease;
+
+    transition:
+        transform .2s ease,
+        opacity .2s ease;
 }
 
 .carrito-whatsapp:hover{
     transform:translateY(-2px);
     opacity:.9;
+}
+
+.carrito-whatsapp img{
+    width:21px;
+    height:21px;
+    object-fit:contain;
+}
+
+.carrito-aviso{
+    margin:12px 0 0;
+    color:var(--text-light);
+    font-size:.78rem;
+    line-height:1.5;
+    text-align:center;
 }
 
 /*==================================

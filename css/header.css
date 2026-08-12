@@ -12,6 +12,16 @@ padding:18px 0;
 transition:.35s;
 }
 
+/*==================================
+ACCIONES DEL HEADER
+==================================*/
+
+.header-acciones{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
 .header.scrolled{
 background:rgba(243,238,232,.94);
 backdrop-filter:blur(14px);
@@ -485,4 +495,28 @@ DROPDOWN PRODUCTOS - PC
 .dropdown-categorias a:hover{
     background:rgba(255,255,255,.06);
     color:var(--primary);
+}
+
+@media(min-width:992px){
+
+    .menu-btn{
+        display:none;
+    }
+
+}
+
+@media(max-width:991px){
+
+    .nav-mobile{
+        z-index:1001;
+    }
+
+    .overlay{
+        z-index:1000;
+    }
+
+    .header{
+        z-index:900;
+    }
+
 }

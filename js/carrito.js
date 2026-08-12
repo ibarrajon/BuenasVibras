@@ -2,15 +2,16 @@
 // CONFIGURACIÓN
 //==================================
 
-const RUTA_PRODUCTOS = "data/productos.json";
-const CLAVE_CARRITO = "buenasVibrasCarrito";
+const RUTA_PRODUCTOS="data/productos.json";
+const CLAVE_CARRITO="buenasVibrasCarrito";
 
 
 //==================================
 // ELEMENTO PRINCIPAL
 //==================================
 
-const contenedorCarrito = document.getElementById("carrito-contenido");
+const contenedorCarrito=
+    document.getElementById("carrito-contenido");
 
 
 //==================================
@@ -28,13 +29,17 @@ async function cargarCarrito(){
 
     try{
 
-        const respuesta = await fetch(RUTA_PRODUCTOS);
+        const respuesta=
+            await fetch(RUTA_PRODUCTOS);
 
         if(!respuesta.ok){
-            throw new Error("No se pudo cargar productos.json");
+            throw new Error(
+                "No se pudo cargar productos.json"
+            );
         }
 
-        const productos = await respuesta.json();
+        const productos=
+            await respuesta.json();
 
         mostrarCarrito(productos);
 
@@ -42,11 +47,20 @@ async function cargarCarrito(){
 
         console.error(error);
 
-        contenedorCarrito.innerHTML = `
+        contenedorCarrito.innerHTML=`
+
             <div class="carrito-vacio">
-                <h2>No se pudo cargar el carrito</h2>
-                <p>Intentá nuevamente.</p>
+
+                <h2>
+                    No se pudo cargar el carrito
+                </h2>
+
+                <p>
+                    Intentá nuevamente.
+                </p>
+
             </div>
+
         `;
 
     }
@@ -60,64 +74,85 @@ async function cargarCarrito(){
 
 function mostrarCarrito(productos){
 
-    const carrito = obtenerCarrito();
+    const carrito=
+        obtenerCarrito();
 
-    if(carrito.length === 0){
+    if(carrito.length===0){
 
         mostrarCarritoVacio();
+        actualizarContador();
+
         return;
 
     }
 
-    const productosCarrito = carrito
-        .map(item => {
+    const productosCarrito=
+        carrito
+        .map(item=>{
 
-            const producto = productos.find(
-                p => Number(p.id) === Number(item.id)
-            );
+            const producto=
+                productos.find(
+                    p=>Number(p.id)===Number(item.id)
+                );
 
             if(!producto){
                 return null;
             }
 
             return {
-                producto,
-                cantidad:item.cantidad
+                producto:producto,
+                cantidad:Number(item.cantidad)
             };
 
         })
-        .filter(item => item !== null);
+        .filter(item=>item!==null);
 
-    if(productosCarrito.length === 0){
+
+    if(productosCarrito.length===0){
 
         mostrarCarritoVacio();
+        actualizarContador();
+
         return;
 
     }
 
-    let subtotal = 0;
 
-    let htmlProductos = "";
+    let subtotal=0;
 
-    productosCarrito.forEach(item => {
+    let htmlProductos="";
 
-        const producto = item.producto;
-        const cantidad = item.cantidad;
 
-        const precio = Number(producto.precio);
-        const subtotalProducto = precio * cantidad;
+    productosCarrito.forEach(item=>{
 
-        subtotal += subtotalProducto;
+        const producto=
+            item.producto;
 
-        htmlProductos += `
+        const cantidad=
+            item.cantidad;
+
+        const precio=
+            Number(producto.precio);
+
+        const subtotalProducto=
+            precio*cantidad;
+
+        subtotal+=subtotalProducto;
+
+
+        htmlProductos+=`
+
             <article class="carrito-item">
 
                 <div class="carrito-item-imagen">
+
                     <img
                         src="img/productos/${producto.imagen}"
                         alt="${producto.nombre}"
                     >
+
                 </div>
+
 
                 <div class="carrito-item-info">
 
@@ -126,8 +161,11 @@ function mostrarCarrito(productos){
                     </h2>
 
                     <div class="carrito-item-precio">
+
                         ${formatearPrecio(precio)} c/u
+
                     </div>
+
 
                     <div class="carrito-item-controles">
 
@@ -135,7 +173,8 @@ function mostrarCarrito(productos){
 
                             <button
                                 type="button"
-                                onclick="cambiarCantidad(${producto.id}, -1)"
+                                onclick="cambiarCantidad(${producto.id},-1)"
+                                aria-label="Disminuir cantidad"
                             >
                                 −
                             </button>
@@ -146,12 +185,14 @@ function mostrarCarrito(productos){
 
                             <button
                                 type="button"
-                                onclick="cambiarCantidad(${producto.id}, 1)"
+                                onclick="cambiarCantidad(${producto.id},1)"
+                                aria-label="Aumentar cantidad"
                             >
                                 +
                             </button>
 
                         </div>
+
 
                         <button
                             type="button"
@@ -165,28 +206,37 @@ function mostrarCarrito(productos){
 
                 </div>
 
+
                 <div class="carrito-item-subtotal">
+
                     ${formatearPrecio(subtotalProducto)}
+
                 </div>
 
             </article>
+
         `;
 
     });
 
-    contenedorCarrito.innerHTML = `
+
+    contenedorCarrito.innerHTML=`
 
         <div class="carrito-layout">
 
             <div class="carrito-productos">
+
                 ${htmlProductos}
+
             </div>
+
 
             <aside class="carrito-resumen">
 
                 <h2>
                     Resumen
                 </h2>
+
 
                 <div class="carrito-resumen-linea">
 
@@ -200,6 +250,7 @@ function mostrarCarrito(productos){
 
                 </div>
 
+
                 <div class="carrito-resumen-total">
 
                     <span>
@@ -207,18 +258,35 @@ function mostrarCarrito(productos){
                     </span>
 
                     <strong>
-                        ${formatearPrecio(subtotal)}
+                        $${formatearPrecio(subtotal)}
                     </strong>
 
                 </div>
 
+
                 <button
                     type="button"
+                    id="btn-whatsapp"
                     class="carrito-whatsapp"
-                    disabled
                 >
+
+                    <img
+                        src="img/whatsapp.png"
+                        alt=""
+                    >
+
                     Enviar pedido por WhatsApp
+
                 </button>
+
+
+                <p class="carrito-aviso">
+
+                    Se abrirá WhatsApp con el detalle
+                    de tu pedido para confirmar la compra.
+
+                </p>
+
 
                 <button
                     type="button"
@@ -234,6 +302,26 @@ function mostrarCarrito(productos){
 
     `;
 
+
+    //==================================
+    // BOTÓN WHATSAPP
+    //==================================
+
+    const btnWhatsApp=
+        document.getElementById("btn-whatsapp");
+
+    if(btnWhatsApp){
+
+        btnWhatsApp.addEventListener(
+            "click",
+            enviarPedidoWhatsApp
+        );
+
+    }
+
+
+    actualizarContador();
+
 }
 
 
@@ -243,7 +331,7 @@ function mostrarCarrito(productos){
 
 function mostrarCarritoVacio(){
 
-    contenedorCarrito.innerHTML = `
+    contenedorCarrito.innerHTML=`
 
         <div class="carrito-vacio">
 
@@ -265,7 +353,7 @@ function mostrarCarritoVacio(){
 
     `;
 
-    if(typeof lucide !== "undefined"){
+    if(typeof lucide!=="undefined"){
         lucide.createIcons();
     }
 
@@ -280,9 +368,14 @@ function obtenerCarrito(){
 
     try{
 
-        const carrito = localStorage.getItem(CLAVE_CARRITO);
+        const carrito=
+            localStorage.getItem(
+                CLAVE_CARRITO
+            );
 
-        return carrito ? JSON.parse(carrito) : [];
+        return carrito
+            ? JSON.parse(carrito)
+            : [];
 
     }catch(error){
 
@@ -310,28 +403,53 @@ function guardarCarrito(carrito){
 
 
 //==================================
+// ACTUALIZAR CONTADOR
+//==================================
+
+function actualizarContador(){
+
+    if(typeof actualizarContadorCarrito==="function"){
+
+        actualizarContadorCarrito();
+
+    }
+
+}
+
+
+//==================================
 // CAMBIAR CANTIDAD
 //==================================
 
-function cambiarCantidad(id, cambio){
+function cambiarCantidad(id,cambio){
 
-    const carrito = obtenerCarrito();
+    const carrito=
+        obtenerCarrito();
 
-    const item = carrito.find(
-        producto => Number(producto.id) === Number(id)
-    );
+
+    const item=
+        carrito.find(
+            producto=>
+                Number(producto.id)===Number(id)
+        );
+
 
     if(!item){
         return;
     }
 
-    item.cantidad += cambio;
 
-    if(item.cantidad <= 0){
+    item.cantidad=
+        Number(item.cantidad)+cambio;
 
-        const nuevoCarrito = carrito.filter(
-            producto => Number(producto.id) !== Number(id)
-        );
+
+    if(item.cantidad<=0){
+
+        const nuevoCarrito=
+            carrito.filter(
+                producto=>
+                    Number(producto.id)!==Number(id)
+            );
 
         guardarCarrito(nuevoCarrito);
 
@@ -341,11 +459,9 @@ function cambiarCantidad(id, cambio){
 
     }
 
+
     cargarCarrito();
 
-    if(typeof actualizarContadorCarrito === "function"){
-        actualizarContadorCarrito();
-    }
 }
 
 
@@ -355,21 +471,23 @@ function cambiarCantidad(id, cambio){
 
 function eliminarProducto(id){
 
-    const carrito = obtenerCarrito();
+    const carrito=
+        obtenerCarrito();
 
-    const nuevoCarrito = carrito.filter(
-        producto => Number(producto.id) !== Number(id)
-    );
+
+    const nuevoCarrito=
+        carrito.filter(
+            producto=>
+                Number(producto.id)!==Number(id)
+        );
+
 
     guardarCarrito(nuevoCarrito);
 
     cargarCarrito();
 
-    if(typeof actualizarContadorCarrito === "function"){
-        actualizarContadorCarrito();
-    }
-
 }
+
 
 //==================================
 // CONTAR UNIDADES
@@ -378,7 +496,8 @@ function eliminarProducto(id){
 function contarUnidades(carrito){
 
     return carrito.reduce(
-        (total,item) => total + Number(item.cantidad),
+        (total,item)=>
+            total+Number(item.cantidad),
         0
     );
 
@@ -401,27 +520,141 @@ function formatearPrecio(valor){
 
 }
 
+
 //==================================
 // VACIAR CARRITO
 //==================================
+
 function vaciarCarrito(){
 
-    const confirmar = confirm(
-        "¿Querés eliminar todos los productos del carrito?"
-    );
+    const confirmar=
+        confirm(
+            "¿Querés eliminar todos los productos del carrito?"
+        );
+
 
     if(!confirmar){
         return;
     }
 
+
     localStorage.removeItem(
-        "buenasVibrasCarrito"
+        CLAVE_CARRITO
     );
+
 
     cargarCarrito();
 
-    if(typeof actualizarContadorCarrito === "function"){
-        actualizarContadorCarrito();
+}
+
+
+//==================================
+// ENVIAR PEDIDO POR WHATSAPP
+//==================================
+
+async function enviarPedidoWhatsApp(){
+
+    const carrito=
+        obtenerCarrito();
+
+
+    if(carrito.length===0){
+        return;
+    }
+
+
+    try{
+
+        const respuesta=
+            await fetch(RUTA_PRODUCTOS);
+
+
+        if(!respuesta.ok){
+            throw new Error(
+                "No se pudo cargar productos.json"
+            );
+        }
+
+
+        const productos=
+            await respuesta.json();
+
+
+        let mensaje=
+            "Hola Buenas Vibras, quiero realizar el siguiente pedido:\n\n";
+
+
+        let total=0;
+
+
+        carrito.forEach(item=>{
+
+            const producto=
+                productos.find(
+                    p=>Number(p.id)===Number(item.id)
+                );
+
+
+            if(!producto){
+                return;
+            }
+
+
+            const cantidad=
+                Number(item.cantidad);
+
+            const precio=
+                Number(producto.precio);
+
+            const subtotal=
+                precio*cantidad;
+
+
+            total+=subtotal;
+
+
+            mensaje+=
+                `• ${producto.nombre}\n`+
+                `  Cantidad: ${cantidad}\n`+
+                `  Precio: $${formatearPrecio(precio)}\n`+
+                `  Subtotal: $${formatearPrecio(subtotal)}\n\n`;
+
+        });
+
+
+        mensaje+=
+            `TOTAL: $${formatearPrecio(total)}\n\n`;
+
+
+        mensaje+=
+            "Quedo a la espera de confirmación. Gracias.";
+
+
+        const telefono=
+            "5492324653232";
+
+
+        const url=
+            `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+
+
+        window.open(
+            url,
+            "_blank"
+        );
+
+
+    }catch(error){
+
+        console.error(
+            "Error generando pedido:",
+            error
+        );
+
+        alert(
+            "No se pudo preparar el pedido. Intentá nuevamente."
+        );
+
     }
 
 }

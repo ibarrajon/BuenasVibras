@@ -75,14 +75,28 @@ function cargarComponentes(){
                 </nav>
 
                 <!-- Acciones -->
-                <a
-                    href="carrito.html"
-                    class="carrito-icono"
-                    aria-label="Mi pedido"
-                >
-                    <i data-lucide="shopping-cart"></i>
-                    <span class="carrito-contador">0</span>
-                </a>
+                <div class="header-acciones">
+
+                    <a
+                        href="carrito.html"
+                        class="carrito-icono"
+                        aria-label="Mi pedido"
+                        title="Ver carrito"
+                    >
+                        <i data-lucide="shopping-cart"></i>
+                        <span class="carrito-contador">0</span>
+                    </a>
+
+                    <button
+                        id="menu-btn"
+                        class="menu-btn"
+                        type="button"
+                        aria-label="Abrir menú"
+                    >
+                        <i data-lucide="menu"></i>
+                    </button>
+
+                </div>
             </div>
         </header>
 
