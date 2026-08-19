@@ -529,16 +529,9 @@ async function cargarCategorias(){
                             ${categoria.nombre}
                         </h3>
 
-                        <p>
-                            ${categoria.descripcion}
-                        </p>
-
                         <span class="categoria-link">
-
                             Ver productos
-
                             <i data-lucide="arrow-right"></i>
-
                         </span>
 
                     </div>
@@ -589,9 +582,6 @@ async function cargarCategorias(){
 // CARGAR PRODUCTOS DESTACADOS
 //==================================
 
-//==================================
-// CARGAR PRODUCTOS DESTACADOS
-//==================================
 
 async function cargarDestacados(){
 
